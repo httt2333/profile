@@ -256,7 +256,7 @@ function Card({ project, stacked, onOpen }: { project: Project; stacked: boolean
         style={{ background: project.tint }}
       />
 
-      <img src={project.image} alt={`${project.title} project artwork`} className="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035] group-hover:opacity-75" loading="lazy" />
+      <img src={project.image} alt={`${project.title} project artwork`} className="absolute inset-0 h-full w-full object-contain opacity-60 transition duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035] group-hover:opacity-75" loading="lazy" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-void)] via-[var(--color-void)]/55 to-transparent" />
       <div className="relative z-10 flex h-full flex-col justify-between p-8 md:p-10">
         <div className="flex items-start justify-between font-mono text-label uppercase tracking-[0.16em] text-[var(--color-bone-dim)]">
