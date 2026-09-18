@@ -84,7 +84,7 @@ export default function Hero() {
         data-hero-fade
             src="/assets/projects/airth-cover.png"
         alt="A translucent inspection lens over a monochrome image contact sheet"
-        className="pointer-events-none absolute bottom-[12vh] right-[6vw] z-0 hidden aspect-[4/3] w-[min(38vw,560px)] object-cover opacity-70 mix-blend-screen md:block"
+            className="pointer-events-none absolute bottom-[12vh] right-[6vw] z-0 hidden aspect-[4/3] w-[min(38vw,560px)] object-cover opacity-70 mix-blend-screen md:block"
         loading="eager"
       />
 

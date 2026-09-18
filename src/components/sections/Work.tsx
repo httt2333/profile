@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { useGSAP } from "../../lib/useGSAP";
 import { getLenis, gsap } from "../../lib/smoothScroll";
-import { useCoarsePointer, useMediaQuery, usePrefersReducedMotion } from "../../lib/hooks";
+import { useMediaQuery, usePrefersReducedMotion } from "../../lib/hooks";
 
 type IconKind = "lens" | "voice" | "study" | "collab";
 
@@ -92,7 +92,7 @@ const PROJECTS: Project[] = [
     tint: "#b8c5b2",
     surface: "radial-gradient(120% 90% at 70% 20%, #1d2920 0%, #0b0d0b 65%)",
     icon: "collab",
-    image: "/assets/common-ground.png",
+    image: "/assets/projects/petfit.png",
     gallery: ["/assets/common-ground.png", "/assets/ai-image-checker.png", "/assets/signal-noise.png", "/assets/agent-workspace.png"],
   },
   {
@@ -118,12 +118,11 @@ export default function Work() {
   const [galleryIndex, setGalleryIndex] = useState(0);
   const section = useRef<HTMLElement>(null);
   const track = useRef<HTMLDivElement>(null);
-  const coarse = useCoarsePointer();
   const narrow = useMediaQuery("(max-width: 767px)");
   const reduced = usePrefersReducedMotion();
   // single source of truth: stack vertically (no pin) on small screens, touch
   // devices, or when reduced motion is requested — pin/scrub otherwise.
-  const stacked = coarse || narrow || reduced;
+  const stacked = narrow || reduced;
 
   useGSAP(() => {
     if (stacked) return;
