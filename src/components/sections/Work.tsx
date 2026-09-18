@@ -17,84 +17,73 @@ type Project = {
   icon: IconKind;
   image: string;
   gallery: string[];
+  result?: string;
 };
 
 const PROJECTS: Project[] = [
   {
     index: "01",
-    title: "AI 视觉质量评估工具",
-    category: "AI 产品 / 独立负责",
-    stack: "Agent Evaluation · Human-in-the-loop · Web 原型",
-    blurb:
-      "针对 AI 素材生成快但质量判断依赖经验的问题，建立检测、定位、判断、修复与复核闭环。",
-    year: "2026",
-    tint: "#ece8df",
-    surface:
-      "radial-gradient(120% 90% at 20% 15%, #232220 0%, #0e0d0c 55%), linear-gradient(135deg, #171614, #0a0908)",
-    icon: "lens",
-    image: "/assets/ai-image-checker.png",
-    gallery: ["/assets/ai-image-checker.png", "/assets/signal-noise.png", "/assets/agent-workspace.png", "/assets/common-ground.png"],
-  },
-  {
-    index: "02",
-    title: "二次元游戏多 Agent 内容生产",
-    category: "内容生产系统 / 腾讯 IEG",
+    title: "NIKKE：AI 内容与视觉生产",
+    category: "内容与视觉 / 腾讯 IEG",
     stack: "Multi-Agent · Workflow · Bad Case · Evaluation",
     blurb:
-      "将角色、脚本、动作、镜头、生成修复与质量复核拆成可协作的 Agent 节点，提升内容生产稳定性。",
+      "AI 可以生成得很快，但真正困难的是让它稳定、好看，而且能用。 从角色、分镜到生成与修复，我尝试把不稳定的创作过程变成更可靠的生产方式。",
+    result: "20% → 80% 一次通过率 · 100 万+ 播放",
     year: "2026",
     tint: "#c7c2b8",
     surface:
       "radial-gradient(110% 80% at 80% 10%, #1e1d1a 0%, #0c0b0a 60%), linear-gradient(135deg, #15140f, #0a0908)",
     icon: "voice",
-    image: "/assets/agent-workspace.png",
-    gallery: ["/assets/agent-workspace.png", "/assets/ai-image-checker.png", "/assets/common-ground.png", "/assets/signal-noise.png"],
+    image: "/assets/projects/双人排球-音频转.gif",
+    gallery: ["/assets/projects/双人排球-音频转.gif", "/assets/projects/SAMPLE5_video.gif", "/assets/agent-workspace.png", "/assets/ai-image-checker.png"],
   },
   {
-    index: "03",
+    index: "02",
     title: "雇主品牌内容系统",
     category: "品牌内容设计 / MKS 中国",
     stack: "内容系统 · 视觉规则 · 7 套模板 / SOP",
     blurb:
-      "针对年轻求职人群的认知问题，从一次次内容制作转向可持续的品牌内容系统。",
+      "不是多做几篇内容，而是找到什么真正有效。 从选题、封面到发布后的数据反馈，让下一次设计有依据可循。",
+    result: "2,900 → 8,000 账号关注 · 1 DAY → 20 MIN",
     year: "2026",
     tint: "#a7a299",
     surface:
       "radial-gradient(120% 90% at 70% 30%, #201f1c 0%, #0d0c0b 60%), linear-gradient(135deg, #161512, #0a0908)",
     icon: "study",
-    image: "/assets/signal-noise.png",
-    gallery: ["/assets/signal-noise.png", "/assets/common-ground.png", "/assets/ai-image-checker.png", "/assets/agent-workspace.png"],
+    image: "/assets/projects/mks-cover.png",
+    gallery: ["/assets/projects/mks-cover.png", "/assets/projects/微信截图_20260917165245.png", "/assets/projects/微信截图_20260917165300.png", "/assets/projects/微信截图_20260917165415.png"],
   },
   {
-    index: "04",
+    index: "03",
     title: "AI 辅助视觉运营",
     category: "品牌视觉 / 锐明技术",
     stack: "Midjourney · 品牌视觉 · 多端延展",
     blurb:
-      "将创意探索、人工修复、版本适配与交付复核串成稳定流程，让视觉生产从单次执行走向可复用。",
+      "在效率和品质之间，找到更好的工作方式。 从主视觉到多端延展，也尝试把 AI 放进真正的商业设计流程里。",
+    result: "5 组节日视觉 · 1 套年会主视觉 · 20+ 延展物料",
     year: "2026",
     tint: "#837e75",
     surface:
       "radial-gradient(120% 90% at 30% 80%, #1b1a17 0%, #0c0b0a 60%), linear-gradient(135deg, #141310, #0a0908)",
     icon: "collab",
-    image: "/assets/common-ground.png",
-    gallery: ["/assets/common-ground.png", "/assets/agent-workspace.png", "/assets/signal-noise.png", "/assets/ai-image-checker.png"],
+    image: "/assets/projects/streamax-cover.png",
+    gallery: ["/assets/projects/streamax-cover.png", "/assets/projects/2. Outside of work.png", "/assets/projects/5.2 Project process.png", "/assets/projects/5.3 Project process.png"],
   },
   {
-    index: "05",
+    index: "04",
     title: "AIRTH 情绪支持体验",
     category: "C 端 AI 陪伴 / 产品负责人",
     stack: "用户研究 · Unity / VR · DeepSeek API",
-    blurb: "通过用户研究，将情绪输入映射为空间、天气和互动状态，探索低负担、非评判的情绪支持。",
+    blurb: "把难以说出口的情绪，变成可以进入、触碰和回应的世界。",
     year: "2025",
     tint: "#d9d0bd",
     surface: "radial-gradient(120% 90% at 30% 20%, #29251f 0%, #0e0d0c 65%)",
     icon: "voice",
-    image: "/assets/agent-workspace.png",
-    gallery: ["/assets/agent-workspace.png", "/assets/common-ground.png", "/assets/ai-image-checker.png", "/assets/signal-noise.png"],
+    image: "/assets/projects/airth-cover.png",
+    gallery: ["/assets/projects/airth-cover.png", "/assets/projects/微信截图_20260917192244.png", "/assets/projects/微信截图_20260917192331.png", "/assets/projects/微信截图_20260917192348.png"],
   },
   {
-    index: "06",
+    index: "05",
     title: "PetFit 宠物陪伴式饮食管理",
     category: "C 端健康管理 / 独立负责",
     stack: "用户研究 · 微信小程序 · AI 陪伴",
@@ -105,6 +94,22 @@ const PROJECTS: Project[] = [
     icon: "collab",
     image: "/assets/common-ground.png",
     gallery: ["/assets/common-ground.png", "/assets/ai-image-checker.png", "/assets/signal-noise.png", "/assets/agent-workspace.png"],
+  },
+  {
+    index: "06",
+    title: "社交互动体验实验",
+    category: "数字体验 / 交互设计",
+    stack: "界面叙事 · 实体原型 · 体验流程",
+    blurb:
+      "从界面流程到实体原型，探索人与人如何在一个轻盈的数字世界里交流、共享和回应。",
+    result: "交互流程 · 视觉系统 · 实体原型",
+    year: "2026",
+    tint: "#b9b0e8",
+    surface:
+      "radial-gradient(120% 90% at 18% 14%, #32277d 0%, #17122f 58%), linear-gradient(135deg, #27205e, #0a0908)",
+    icon: "collab",
+    image: "/assets/projects/social/social-03.png",
+    gallery: ["/assets/projects/social/social-03.png", "/assets/projects/social/social-02.png", "/assets/projects/social/social-01.png"],
   },
 ];
 
@@ -170,7 +175,7 @@ export default function Work() {
           <p className="label hidden text-right md:block">
             拖动 · 滚动
             <br />
-            {PROJECTS.length} projects
+            {PROJECTS.length} 个项目
           </p>
         )}
       </div>
@@ -192,10 +197,10 @@ export default function Work() {
           <h2 className="text-h2 font-display leading-[0.9]">
             精选
             <br />
-            <span className="font-serif font-normal italic text-[var(--color-acid)]">Projects</span>
+            <span className="font-serif font-normal italic text-[var(--color-acid)]">Selected Works</span>
           </h2>
           <p className="mt-6 max-w-[34ch] text-body text-[var(--color-bone-dim)]">
-            视觉系统、数字体验与 AI 创意实践。
+            一些真正做过、试过，也得到过反馈的东西。
           </p>
         </div>
 
@@ -273,6 +278,7 @@ function Card({ project, stacked, onOpen }: { project: Project; stacked: boolean
           <p className="mt-4 max-w-[40ch] text-body leading-snug text-[var(--color-bone-dim)] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] md:opacity-0 md:group-hover:opacity-100">
             {project.blurb}
           </p>
+          {project.result && <p className="mt-4 max-w-[44ch] font-mono text-micro leading-relaxed tracking-[0.04em] text-[var(--color-acid)] md:opacity-0 md:transition-opacity md:duration-700 md:group-hover:opacity-100">{project.result}</p>}
         </div>
       </div>
 
@@ -383,6 +389,9 @@ function Gallery({ project, origin, index, onClose, onChange, reduced }: { proje
   return (
     <div ref={overlay} className={`fixed inset-0 z-[10000] flex items-center justify-center bg-[var(--color-void)]/95 px-4 py-8 backdrop-blur-md ${closing ? "animate-[gallery-out_450ms_cubic-bezier(0.16,1,0.3,1)]" : "animate-[gallery-in_500ms_cubic-bezier(0.16,1,0.3,1)]"}`} role="dialog" aria-modal="true" aria-label={`${project.title} 图片画廊`} onClick={requestClose} onWheel={handleWheel}>
       <button className="absolute right-6 top-6 z-20 min-h-11 px-3 font-mono text-label uppercase tracking-[0.16em] text-[var(--color-bone-dim)] hover:text-[var(--color-acid)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-acid)]" onClick={(event) => { event.stopPropagation(); requestClose(); }}>关闭 ×</button>
+      <p className="absolute left-1/2 top-7 z-20 -translate-x-1/2 font-mono text-micro tracking-[0.14em] text-[var(--color-bone-dim)]">
+        滚动查看 · 共 {total} 张
+      </p>
       <div ref={folder} className="relative flex h-[82vh] w-full max-w-7xl flex-col items-center justify-center" onClick={(event) => event.stopPropagation()}>
         <div className="pointer-events-none absolute left-1/2 top-[12%] h-[64vh] w-[min(78vw,880px)] -translate-x-1/2 rounded-[10px] bg-[#171512] shadow-[0_28px_90px_rgba(0,0,0,0.55)]">
           <span className="absolute -top-5 left-0 h-7 w-36 rounded-t-[8px] bg-[#171512]" />
@@ -390,13 +399,16 @@ function Gallery({ project, origin, index, onClose, onChange, reduced }: { proje
         </div>
         <div className="relative h-[58vh] w-[min(78vw,880px)]">
           {slides.map((src, slideIndex) => (
-            <img
+            <button
               key={`${project.index}-${slideIndex}`}
-              src={src}
-              alt={`${project.title} 项目图片 ${slideIndex + 1}`}
-              className="absolute inset-0 h-full w-full rounded-[8px] object-contain shadow-[0_24px_70px_rgba(0,0,0,0.46)] transition-[transform,opacity,filter] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] will-change-transform"
+              type="button"
+              aria-label={slideIndex === index ? "轻点图片返回精选作品" : `${project.title} 项目图片 ${slideIndex + 1}`}
+              onClick={slideIndex === index ? requestClose : undefined}
+              className="absolute inset-0 h-full w-full rounded-[8px] transition-[transform,opacity,filter] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] will-change-transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-acid)]"
               style={positionFor(slideIndex)}
-            />
+            >
+              <img src={src} alt="" className="h-full w-full rounded-[8px] object-contain shadow-[0_24px_70px_rgba(0,0,0,0.46)]" />
+            </button>
           ))}
         </div>
         <div className="relative z-30 mt-5 flex w-[min(78vw,880px)] items-center justify-between font-mono text-micro uppercase tracking-[0.16em] text-[var(--color-bone-dim)]">
@@ -406,6 +418,7 @@ function Gallery({ project, origin, index, onClose, onChange, reduced }: { proje
         <button aria-label="返回精选作品" onClick={requestClose} className="relative z-30 mt-5 flex min-h-11 items-center gap-3 border-b border-[var(--color-bone)]/40 px-3 py-2 font-mono text-label uppercase tracking-[0.16em] text-[var(--color-bone)] transition-colors hover:border-[var(--color-acid)] hover:text-[var(--color-acid)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-acid)]">
           <span aria-hidden="true">←</span> 返回精选作品
         </button>
+        <p className="relative z-30 mt-3 font-mono text-micro tracking-[0.12em] text-[var(--color-ash)]">轻点中间图片也可返回</p>
       </div>
       <button aria-label="上一张图片" onClick={(event) => { event.stopPropagation(); previous(); }} className="absolute left-4 top-1/2 -translate-y-1/2 font-display text-4xl text-[var(--color-bone)] hover:text-[var(--color-acid)] md:left-10">←</button>
       <button aria-label="下一张图片" onClick={(event) => { event.stopPropagation(); next(); }} className="absolute right-4 top-1/2 -translate-y-1/2 font-display text-4xl text-[var(--color-bone)] hover:text-[var(--color-acid)] md:right-10">→</button>

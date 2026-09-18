@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="col-span-12 md:col-span-9">
           <SplitReveal
             as="h2"
-            text="一起做点值得被记住的东西。"
+            text="聊聊？"
             className="text-h2 font-display leading-[0.95]"
           />
 
@@ -47,17 +47,17 @@ export default function Footer() {
         <div>
           <p className="label mb-4">联系</p>
           <p className="text-body text-[var(--color-bone-dim)]">
-            Shenzhen, China
+            深圳
             <br />
-            Remote worldwide
+            视觉 / 交互 / AI
           </p>
         </div>
         <div>
           <p className="label mb-4">链接</p>
           <ul className="space-y-1 text-body text-[var(--color-bone-dim)]">
             {[
-              ["Portfolio", "https://khsj.cn/zhangzixuan"],
-              ["Email", "mailto:Zhangzixuan2333@qq.com"],
+              ["简历", "/resume.pdf"],
+              ["邮箱", "mailto:Zhangzixuan2333@qq.com"],
             ].map(([l, h]) => (
               <li key={l}>
                 <a
@@ -92,7 +92,7 @@ export default function Footer() {
         <div className="md:text-right">
           <p className="label mb-4">现在</p>
           <p className="text-body text-[var(--color-bone-dim)]">
-            持续探索视觉、交互与 AI 之间的新可能。
+            如果你也在做有意思的产品、内容或体验。
           </p>
         </div>
       </div>
@@ -100,14 +100,14 @@ export default function Footer() {
       {/* giant wordmark */}
       <div className="pointer-events-none mt-12 select-none">
         <h2 className="text-center font-display text-mega font-extrabold leading-[0.9] tracking-tight text-[var(--color-bone)]">
-          ZHIXUAN<span className="text-[var(--color-acid)]">°</span>
+          ZIXUAN<span className="text-[var(--color-acid)]">°</span>
         </h2>
       </div>
 
       <div className="flex flex-col items-center justify-between gap-2 border-t edge pt-6 font-mono text-micro uppercase tracking-[0.16em] text-[var(--color-ash)] md:flex-row">
-        <span>© {year} Zhixuan Zhang</span>
-        <span>Visual Designer &amp; AI Product Maker</span>
-        <span>Shenzhen, China</span>
+        <span>© {year} Zixuan Zhang</span>
+        <span>视觉设计 / AI 创意应用</span>
+        <span>深圳</span>
       </div>
     </footer>
   );

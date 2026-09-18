@@ -81,8 +81,8 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
         </div>
 
         <div className="flex items-end justify-between">
-          <h2 className="font-display text-display leading-[0.8]" aria-label="Zhixuan Zhang">
-            {"ZHIXUAN".split("").map((c, i) => (
+          <h2 className="font-display text-display leading-[0.8]" aria-label="Zixuan Zhang">
+            {"ZIXUAN".split("").map((c, i) => (
               <span key={i} className="line-mask align-bottom" style={{ display: "inline-block" }}>
                 <span data-pre-char style={{ display: "inline-block" }}>
                   {c}

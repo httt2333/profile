@@ -82,7 +82,7 @@ export default function Hero() {
 
       <img
         data-hero-fade
-        src="/assets/ai-image-checker.png"
+            src="/assets/projects/airth-cover.png"
         alt="A translucent inspection lens over a monochrome image contact sheet"
         className="pointer-events-none absolute bottom-[12vh] right-[6vw] z-0 hidden aspect-[4/3] w-[min(38vw,560px)] object-cover opacity-70 mix-blend-screen md:block"
         loading="eager"
@@ -94,9 +94,9 @@ export default function Hero() {
         className="relative z-10 flex items-start justify-between"
       >
         <p className="label max-w-[18ch] leading-relaxed">
-          视觉设计
+          视觉 / 交互 / AI
           <br />
-          交互体验 / AI 创意实践
+          
         </p>
         <p className="label hidden text-right md:block">
           深圳
@@ -124,10 +124,10 @@ export default function Hero() {
         />
         <h1 className="font-display text-mega leading-[0.82]">
           <span className="sr-only">
-            Zhixuan Zhang, Visual Designer and AI Product Maker based in Shenzhen
+            Zixuan Zhang, Visual Designer and AI Product Maker based in Shenzhen
           </span>
           <span data-hero-line className="line-mask" aria-hidden="true">
-            <span className="inline-block will-change-transform">ZHIXUAN</span>
+            <span className="inline-block will-change-transform">ZIXUAN</span>
           </span>
         </h1>
         <p data-hero-fade className="mt-2 font-serif text-h3 italic leading-none text-[var(--color-acid)]">
@@ -137,7 +137,8 @@ export default function Hero() {
           data-hero-fade
           className="mt-7 max-w-[42ch] text-lead font-light text-[var(--color-bone-dim)]"
         >
-          从业务与用户问题出发，把视觉、交互与 AI 变成能落地、能验证、能产生结果的设计。
+          把复杂的问题，<br />做成清晰的体验。
+          <span className="mt-4 block text-body text-[var(--color-ash)]">视觉、交互与 AI，<br />是我解决问题的不同方式。</span>
         </p>
         <button
           data-hero-fade

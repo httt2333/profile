@@ -3,7 +3,7 @@ import { useGSAP } from "../../lib/useGSAP";
 import { gsap } from "../../lib/smoothScroll";
 
 const TEXT =
-  "我不把设计理解成单纯的视觉执行。我更关心用户为什么会接受，业务真正需要解决什么，以及设计最终有没有产生价值。从研究、信息与视觉系统，到交互原型和 AI 应用，我习惯先理解问题，再决定应该设计什么。先理解问题，再决定设计什么。";
+  "先想清楚， 再动手。 我不把设计当作最后一层包装。 很多时候，我会先去看用户、场景和业务， 再决定该做一张图、一套系统， 还是一个真正能跑起来的体验。";
 
 export default function Manifesto() {
   const root = useRef<HTMLElement>(null);

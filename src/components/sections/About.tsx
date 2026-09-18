@@ -100,7 +100,7 @@ export default function About() {
                   <source srcSet={portraitWebp} type="image/webp" />
                   <img
                     src={portraitJpg}
-                    alt="张紫瑄的证件照"
+              alt="张紫瑄的照片"
                     width={880}
                     height={1100}
                     loading="lazy"
@@ -116,7 +116,7 @@ export default function About() {
               <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(10,9,8,0.7),transparent_55%)]" />
 
               <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between p-5 font-mono text-micro uppercase tracking-[0.16em] text-[var(--color-bone)]">
-                <span>Zhixuan Zhang</span>
+                <span>Zixuan Zhang</span>
                 <span className="text-[var(--color-acid)]">CN</span>
               </figcaption>
             </figure>
@@ -194,9 +194,9 @@ export default function About() {
 function SplitHeading() {
   return (
     <h2 className="text-h2 font-display leading-[0.92]">
-      Designer
+      设计师
       <br />
-      <span className="font-serif font-normal italic text-[var(--color-acid)]">with systems</span>.
+      <span className="font-serif font-normal italic text-[var(--color-acid)]">与系统一起</span>。
     </h2>
   );
 }

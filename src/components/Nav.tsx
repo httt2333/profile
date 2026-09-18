@@ -15,7 +15,7 @@ export default function Nav() {
           data-cursor="hover"
           className="font-display text-xl font-extrabold tracking-tight text-[var(--color-bone)]"
         >
-          Zhixuan<span className="text-[var(--color-acid)]">°</span>
+          Zixuan<span className="text-[var(--color-acid)]">°</span>
         </a>
       </Magnetic>
 
@@ -42,7 +42,7 @@ export default function Nav() {
       </nav>
 
       <div className="flex items-center gap-6 font-mono text-label text-[var(--color-bone)]">
-        <span className="hidden sm:inline">Shenzhen / Remote</span>
+        <span className="hidden sm:inline">深圳 / 远程合作</span>
         <Magnetic strength={0.5} className="hidden md:block">
           <a
             href="#contact"
